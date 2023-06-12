@@ -25,6 +25,12 @@ main {
     font-family: 'Sarala', sans-serif;
 }
 
+.roda-pe {
+    background: url(images/honesto.JPG) no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
