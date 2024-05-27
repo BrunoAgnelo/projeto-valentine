@@ -13,68 +13,136 @@
    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/main.css">
+
+   <!-- script
+   ================================================== -->
+   <script src="js/modernizr.js"></script>
+   <script src="js/pace.min.js"></script>
+    
+    <!-- favicons
+	================================================== -->    
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <a class="logo" href="#inicio">Thayná & Eu</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">           
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre nós</a></li>
-                <li><a href="#O que eu amo em você">O que eu amo em você</a></li>
-                <li><a href="#nossas-musicas">Nossas músicas</a></li>
-                <li><a href="/">Nossos filmes e séries</a></li>
+<body id="top">
+
+    <!-- header 
+   ================================================== -->
+    <header id="header" class="row">
+
+        <div class="header-logo">
+            <a href="index.html">Thayná & Eu</a>
+        </div>
+
+        <nav id="header-nav-wrap">    
+            <ul class="header-main-nav">           
+                <li class="current"><a class="smoothscroll" href="#home" title="home">Início</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">Sobre nós</a></li>
+                <li><a class="smoothscroll" href="#O que eu amo em você" title="about">O que eu amo em você</a></li>
                 <li><a href="/">Momentos</a></li>
             </ul>
         </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
     </header>
-    <main>
-        <section id="inicio"></section>
-        <section id="sobre">
-            <h1 id="divisor">Sobre nós</h1>
-            <br>
-            <p>   Há quatro anos, minha vida ganhou um brilho especial quando cruzei meu caminho com o da menina mais maravilhosa, gentil e simpática que já conheci. Desde então, nossa jornada tem sido repleta de momentos inesquecíveis, sorrisos compartilhados e um amor que continua a crescer a cada dia.</p>
-            <br>   
-            <p>Quando penso em nós, imediatamente me vem à mente uma conexão profunda e verdadeira. Somos mais do que apenas namorados; somos melhores amigos, confidentes e companheiros de aventura. Juntos, enfrentamos desafios e celebramos conquistas, sempre apoiando um ao outro em cada passo do caminho.</p>
-            <br>     
-            <p>A gentileza que irradia do coração dessa mulher incrível é algo que me inspira constantemente. Ela tem a habilidade única de enxergar o bem em todos e de estender uma mão amiga quando alguém precisa. Sua empatia e compaixão são contagiantes, e é uma bênção poder testemunhar o impacto positivo que ela tem na vida daqueles ao seu redor.</p>
-            <br>    
-            <p>A simplicidade e alegria com que ela encara a vida são um lembrete constante de que os momentos mais preciosos estão nas pequenas coisas. Juntos, compartilhamos risos contagiantes, abraços calorosos e conversas profundas. Não importa o que estejamos fazendo, cada instante ao seu lado é um presente que guardo com carinho.</p>
-            <br>    
-            <p>Nossa história é marcada por uma cumplicidade que transcende as palavras. Conhecemos as peculiaridades um do outro, nossos medos e sonhos mais profundos. Compartilhamos uma conexão que vai além do tempo e do espaço, e cada momento que passamos juntos é um lembrete de como somos abençoados por ter um ao outro.</p>
-            <br>     
-            <p>Ao longo desses quatro anos, aprendemos que o amor é um compromisso diário. Não é apenas sobre momentos perfeitos, mas sobre enfrentar desafios juntos e crescer individualmente e como casal. Nosso relacionamento tem sido construído com paciência, respeito e comunicação sincera, fortalecendo a base sólida em que nos apoiamos.</p>
-            <br>  
-            <p>Enquanto olho para o futuro, mal posso conter a empolgação que sinto por tudo o que ainda está por vir. Sei que teremos mais risadas, lágrimas, aventuras e desafios. Mas também sei que enfrentaremos tudo isso juntos, de mãos dadas, confiando no nosso amor e na conexão que construímos ao longo desses anos.</p>
-            <br>     
-            <p>Então, aqui estamos nós, quatro anos depois, e meu coração está transbordando de gratidão por ter essa mulher incrível ao meu lado. Ela é a minha inspiração, meu porto seguro e meu grande amor. Mal posso esperar para descobrir o que o futuro reserva para nós, e estou emocionado com cada novo capítulo que escreveremos juntos.</p>
-            <br>     
-            <p>Amo você mais do que as palavras podem expressar, e sou eternamente grato por ter você como minha namorada, minha parceira e minha alma gêmea. Juntos, formamos uma equipe imbatível, e estou animado para continuar construindo uma vida repleta de amor</p>
-            <br>
+
+    <section id="home" data-parallax="scroll" data-image-src="./images/valentines-day.jpg" data-natural-width=1920 data-natural-height=900>
+
+        <div class="overlay"></div>
+        <div class="home-content">
+
+            <div class="row contents">
+                <div class="header-logo-over" data-aos="fade-up"></div>
+                <div class="home-content-left">
+                    <h1 data-aos="fade-up">
+                        Feliz Dia dos Namorados
+                    </h1>
+                    <div class="buttons" data-aos="fade-up">
+                        <a class="smoothscroll button stroke" href="#contact">
+                            <span class="icon-circle-down" aria-hidden="true"></span>
+                            Contato
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--end home-content-->
+
+        <ul class="home-social-list">
+            <li>
+                <a href="/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a href="/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+                <a class="smoothscroll" href="#contact"><i class="fa fa-envelope"></i></i>
+                </a>
+            </li>
+        </ul>
+        <!-- end home-social-list -->
+
+        <div class="home-scrolldown">
+            <a href="#about" class="scroll-icon smoothscroll">
+                <span>Rolar para Baixo</span>
+                <i class="icon-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </section>
+    <!--end home-->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about">
+        <h1 class="intro-header" data-aos="fade-up">Sobre nós</h1>
+        <div class="col-four">
+            <img class="imgSobre" src="images/honesto.JPG" srcset="images/honesto.JPG 1x, images/honesto.JPG 2x" data-aos="fade-up">
+        </div>        
+        <p>   Há quatro anos, minha vida ganhou um brilho especial quando cruzei meu caminho com o da menina mais maravilhosa, gentil e simpática que já conheci. Desde então, nossa jornada tem sido repleta de momentos inesquecíveis, sorrisos compartilhados e um amor que continua a crescer a cada dia.</p>
+        <br>   
+        <p>Quando penso em nós, imediatamente me vem à mente uma conexão profunda e verdadeira. Somos mais do que apenas namorados; somos melhores amigos, confidentes e companheiros de aventura. Juntos, enfrentamos desafios e celebramos conquistas, sempre apoiando um ao outro em cada passo do caminho.</p>
+        <br>     
+        <p>A gentileza que irradia do coração dessa mulher incrível é algo que me inspira constantemente. Ela tem a habilidade única de enxergar o bem em todos e de estender uma mão amiga quando alguém precisa. Sua empatia e compaixão são contagiantes, e é uma bênção poder testemunhar o impacto positivo que ela tem na vida daqueles ao seu redor.</p>
+        <br>    
+        <p>A simplicidade e alegria com que ela encara a vida são um lembrete constante de que os momentos mais preciosos estão nas pequenas coisas. Juntos, compartilhamos risos contagiantes, abraços calorosos e conversas profundas. Não importa o que estejamos fazendo, cada instante ao seu lado é um presente que guardo com carinho.</p>
+        <br>    
+        <p>Nossa história é marcada por uma cumplicidade que transcende as palavras. Conhecemos as peculiaridades um do outro, nossos medos e sonhos mais profundos. Compartilhamos uma conexão que vai além do tempo e do espaço, e cada momento que passamos juntos é um lembrete de como somos abençoados por ter um ao outro.</p>
+        <br>     
+        <p>Ao longo desses quatro anos, aprendemos que o amor é um compromisso diário. Não é apenas sobre momentos perfeitos, mas sobre enfrentar desafios juntos e crescer individualmente e como casal. Nosso relacionamento tem sido construído com paciência, respeito e comunicação sincera, fortalecendo a base sólida em que nos apoiamos.</p>
+        <br>  
+        <p>Enquanto olho para o futuro, mal posso conter a empolgação que sinto por tudo o que ainda está por vir. Sei que teremos mais risadas, lágrimas, aventuras e desafios. Mas também sei que enfrentaremos tudo isso juntos, de mãos dadas, confiando no nosso amor e na conexão que construímos ao longo desses anos.</p>
+        <br>     
+        <p>Então, aqui estamos nós, quatro anos depois, e meu coração está transbordando de gratidão por ter essa mulher incrível ao meu lado. Ela é a minha inspiração, meu porto seguro e meu grande amor. Mal posso esperar para descobrir o que o futuro reserva para nós, e estou emocionado com cada novo capítulo que escreveremos juntos.</p>
+        <br>     
+        <p>Amo você mais do que as palavras podem expressar, e sou eternamente grato por ter você como minha namorada, minha parceira e minha alma gêmea. Juntos, formamos uma equipe imbatível, e estou animado para continuar construindo uma vida repleta de amor</p>
+        <br>
         </section>
         <section id="O-que-eu-amo-em-voce">
-            <h1 id="divisor">O que eu amo em você</h1>
-            <br>
-            <p>Momo</p>
-            <br>
-            <p>Há tantas coisas que amo em você, é difícil escolher apenas uma. Mas se eu tivesse que destacar algo, seria a sua incrível capacidade de amar e cuidar das pessoas ao seu redor. Seu coração bondoso e sua força de vontade me inspira todos os dias.(gentil e simpática)</p>
-            <br>
-            <p>Amo como você se preocupa com os outros, sempre pronta para estender uma mão amiga e oferecer apoio quando alguém precisa.Além disso, amo como você me faz sentir especial e amado. Seu sorriso radiante ilumina meu dia! Você é minha parceira de aventuras, minha confidente e minha maior apoiadora. Você sempre me incentiva a seguir meus sonhos e me apoia incondicionalmente em cada passo que dou. Sua confiança em mim é uma fonte de força e coragem que me impulsiona a ser a melhor versão de mim mesmo.</p>
-            <br>
-            <p>Também gosto das nossas discussões e das oportunidades de crescimento que surgem delas. Não é fácil, mas aprendemos a ouvir um ao outro, a expressar nossos pontos de vista e a buscar um entendimento mútuo. Essas conversas desafiadoras nos ajudam a nos conhecer melhor e a fortalecer ainda mais nossa conexão. Além disso, gosto das partes "chatas" do dia a dia que vivemos juntos. As tarefas domésticas, as decisões a serem tomadas e até mesmo as discussões sobre qual filme assistir ou onde ir jantar. Essas pequenas discordâncias nos lembram que somos duas pessoas individuais, com gostos e opiniões diferentes, mas que podemos encontrar um meio-termo e aprender a ceder.</p>
-            <br>
-            <p>Portanto, mesmo que nem tudo seja perfeito, eu sou grato pelas partes chatas do nosso relacionamento. Elas nos ensinam, nos desafiam e nos ajudam a construir uma base sólida para o nosso amor. Estou disposto a enfrentar qualquer obstáculo ao seu lado, porque acredito que o que temos é especial e vale a pena lutar.</p>
+        <h1 id="divisor">O que eu amo em você</h1>
+        <br>
+        <p>Momo</p>
+        <br>
+        <p>Há tantas coisas que amo em você, é difícil escolher apenas uma. Mas se eu tivesse que destacar algo, seria a sua incrível capacidade de amar e cuidar das pessoas ao seu redor. Seu coração bondoso e sua força de vontade me inspira todos os dias.(gentil e simpática)</p>
+        <br>
+        <p>Amo como você se preocupa com os outros, sempre pronta para estender uma mão amiga e oferecer apoio quando alguém precisa.Além disso, amo como você me faz sentir especial e amado. Seu sorriso radiante ilumina meu dia! Você é minha parceira de aventuras, minha confidente e minha maior apoiadora. Você sempre me incentiva a seguir meus sonhos e me apoia incondicionalmente em cada passo que dou. Sua confiança em mim é uma fonte de força e coragem que me impulsiona a ser a melhor versão de mim mesmo.</p>
+        <br>
+        <p>Também gosto das nossas discussões e das oportunidades de crescimento que surgem delas. Não é fácil, mas aprendemos a ouvir um ao outro, a expressar nossos pontos de vista e a buscar um entendimento mútuo. Essas conversas desafiadoras nos ajudam a nos conhecer melhor e a fortalecer ainda mais nossa conexão. Além disso, gosto das partes "chatas" do dia a dia que vivemos juntos. As tarefas domésticas, as decisões a serem tomadas e até mesmo as discussões sobre qual filme assistir ou onde ir jantar. Essas pequenas discordâncias nos lembram que somos duas pessoas individuais, com gostos e opiniões diferentes, mas que podemos encontrar um meio-termo e aprender a ceder.</p>
+        <br>
+        <p>Portanto, mesmo que nem tudo seja perfeito, eu sou grato pelas partes chatas do nosso relacionamento. Elas nos ensinam, nos desafiam e nos ajudam a construir uma base sólida para o nosso amor. Estou disposto a enfrentar qualquer obstáculo ao seu lado, porque acredito que o que temos é especial e vale a pena lutar.</p>
             <br>
         </section>
         <section id="nossas-musicas">
@@ -107,7 +175,6 @@
             <p>Essas músicas não são nem a metade das nossas músicas mas com certeza de trazem as memórias boas que vivem em mim. </p>
             <p id="divisor"></p>
         </section>
-    </main>
 
     <footer class="roda-pe">
         
